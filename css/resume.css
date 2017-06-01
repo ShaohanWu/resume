@@ -1,0 +1,241 @@
+.resume_index {
+  background: url("../images/111.jpg") no-repeat;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
+.resume_index a :hover {
+  text-decoration: none;
+}
+
+.header {
+  background: #969696;
+  position: fixed;
+  z-index: 10000;
+  width: 100% !important;
+  border: none !important;
+}
+.header nav {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header nav .nav {
+  padding-right: 40px;
+}
+.header nav .nav > li > a {
+  color: #fff !important;
+  font-weight: bold;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.header nav .nav > li > a:hover {
+  background: #eee !important;
+}
+.header nav .nav > li.active > a {
+  color: #333 !important;
+}
+
+.main {
+  max-width: 1024px;
+  color: #fff;
+  position: relative;
+}
+.main h3 {
+  color: #3399FF !important;
+  font-weight: bold;
+}
+.main .main_left {
+  background: rgba(44, 44, 44, 0.8);
+  padding-top: 50px;
+}
+.main .main_left h3 {
+  font-size: 22px;
+}
+.main .main_left section {
+  border-bottom: 1px solid #999;
+}
+.main .main_left section.intention .row > div .dl-horizontal dt {
+  width: 72px;
+}
+.main .main_left section.intention .row > div .dl-horizontal dd {
+  margin-left: 75px;
+}
+.main .main_left section.project .project_show_1 div a.thumbnail, .main .main_left section.project .project_show_2 div a.thumbnail {
+  background: #ddd;
+}
+.main .main_left section.project .project_show_1 div.projectCur a, .main .main_left section.project .project_show_2 div.projectCur a {
+  background: #3399FF !important;
+}
+.main .main_left section.project .project_intro_1, .main .main_left section.project .project_intro_2 {
+  margin-bottom: 20px;
+}
+.main .main_left section.project .project_intro_1 h5, .main .main_left section.project .project_intro_2 h5 {
+  color: #3399FF !important;
+  font-weight: bold;
+}
+.main .main_left section.project .project_intro_1 > div, .main .main_left section.project .project_intro_2 > div {
+  display: none;
+}
+.main .main_left section.project .project_intro_2 > div {
+  border: none;
+}
+.main .main_left section.experience > div {
+  margin-bottom: 30px;
+}
+
+.main .main_left section.experience > div > p:last-child i {
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.main .main_left section.university {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.main .main_left section.ewm {
+  text-align: center;
+  padding-bottom: 30px;
+  border: none !important;
+}
+.main .main_left section.ewm img {
+  max-width: 100%;
+}
+.main .main_left section.ewm span {
+  display: block;
+  padding: 10px;
+}
+.main .main_right {
+  z-index: 10001;
+  position: relative;
+  padding: 0;
+}
+.main .main_right h3 {
+  font-size: 20px;
+}
+.main .main_right .main_right_con {
+  padding-top: 50px;
+  position: fixed;
+  background: rgba(16, 16, 16, 0.8);
+  width: 256px;
+  font-size: 14px;
+}
+.main .main_right .main_right_con .main_right_con_top {
+  height: 50px;
+  width: 10000px;
+  position: absolute;
+  background: #3399FF !important;
+  top: 0;
+  left: 0;
+}
+.main .main_right .main_right_con .main_right_con_top:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 36px solid transparent;
+  border-bottom-color: #3399FF !important;
+  left: -36px;
+  top: -37px;
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+}
+.main .main_right .main_right_con .photo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .main_right .main_right_con .self_evaluation {
+  margin-top: 140px;
+}
+.main .main_right .main_right_con .contact {
+  margin-bottom: 10px;
+}
+.main .main_right .main_right_con .contact h3 {
+  margin-top: 10px;
+}
+.main .main_right .main_right_con .contact p {
+  margin: 0;
+}
+.main .main_right .main_right_con .visits {
+  margin: 0 10px 10px 0;
+}
+.main .main_right .main_right_con .visits span {
+  padding: .2em .6em .2em;
+}
+
+@media (min-width: 980px) {
+  .main_right_con {
+    width: 256px !important;
+    font-size: 14px !important;
+  }
+
+  .self_evaluation {
+    margin-top: 80px !important;
+  }
+}
+@media (min-width: 768px) {
+  .col-sm-6 {
+    width: 49%;
+  }
+
+  .main_right_con {
+    width: 187px;
+    font-size: 12px;
+  }
+
+  .self_evaluation {
+    margin-top: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .resume_index {
+    background: none !important;
+  }
+
+  .header .nav {
+    padding-right: 0 !important;
+  }
+
+  .main_left .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .main_left section.intention .row > div .dl-horizontal dt {
+    float: left;
+  }
+  .main_left section.intention .row > div .dl-horizontal dd {
+    margin-left: 75px !important;
+  }
+  .main_left section.project .project_intro_1 > div .row .col-sm-2, .main_left section.project .project_intro_2 > div .row .col-sm-2 {
+    padding-right: 0;
+  }
+  .main_left section.project .project_intro_1 > div .row .col-sm-10, .main_left section.project .project_intro_2 > div .row .col-sm-10 {
+    padding-left: 0;
+  }
+  .main_left section.experience > div > p:last-child i {
+    text-indent: 15px;
+  }
+  .main_left section.ewm {
+    max-width: 100%;
+  }
+
+  .main_right {
+    z-index: 9999 !important;
+  }
+  .main_right .main_right_con {
+    position: static !important;
+    width: 100% !important;
+  }
+  .main_right .main_right_con .main_right_con_top {
+    width: 100% !important;
+  }
+  .main_right .main_right_con .visits {
+    margin-bottom: 0 !important;
+    padding-bottom: 5px;
+  }
+}
+
+/*# sourceMappingURL=resume.css.map */
